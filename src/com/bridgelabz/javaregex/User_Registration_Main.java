@@ -1,5 +1,5 @@
-/*@Purpose:: :As a User need to follow pre defined Password Rules
- *Rule2- Should Have Atleat 1 Upper Case - NOTE – All rules must be passed
+/*@Purpose:: As a User need to follow pre defined Password Rules
+ *Rule3- Should Have Atleat 1 Numeric Number In Password - NOTE – All rules must be passed
  *@File:: User Registration Using Regex
  *@Author:: Kishlay Kishan
  */
@@ -22,6 +22,7 @@ public class User_Registration_Main {
 			System.out.println("Enter 4 : To validate Moblie Number ");
 			System.out.println("Enter 5 : To validate Password Rule 1 ");
 			System.out.println("Enter 6 : To validate Password Rule 2 (Upper Case) ");
+			System.out.println("Enter 7 : To validate Password Rule 3 (Upper Case & One Numeric Number)");
 
 			switch (scanner.nextInt()) {
 			case 0:
@@ -47,6 +48,9 @@ public class User_Registration_Main {
 				break;
 			case 6:
 				User_Registration.validPassRule2();
+				break;
+			case 7:
+				User_Registration.validPassRule3();
 				break;
 
 			default:
